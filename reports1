@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-11-17T06:49:16.995Z",
+    "end": "2023-11-17T06:49:53.066Z",
+    "duration": 36071
+  },
+  "results": [
+    {
+      "uuid": "eda13e3d-65c3-4ab7-aea2-d135537ab810",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pages\\homepage.cy.js",
+      "file": "cypress\\e2e\\pages\\homepage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5cf92952-ff1e-41c2-8f70-056d65aaacd1",
+          "title": "Testing Fitur Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "#Case1 Verify that the (unauthorized user) success add product to cart",
+              "fullTitle": "Testing Fitur Cart #Case1 Verify that the (unauthorized user) success add product to cart",
+              "timedOut": null,
+              "duration": 7898,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "menuHeader.precondUnauthorizedUser();\nmenuHeader.precondCounterCartZero(initialCart);\nhomePage.addProducttoCart(numberofitemcase1);\nhomePage.expectedShowAlertSuccessAddtoCart();\nhomePage.expectedCounterIncrease(numberofitemcase1);",
+              "err": {},
+              "uuid": "efca5bb0-41dc-4ea4-84de-bf30db3bc4ec",
+              "parentUUID": "5cf92952-ff1e-41c2-8f70-056d65aaacd1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#Case2 Verify that the (unauthorized user) success add many product to cart",
+              "fullTitle": "Testing Fitur Cart #Case2 Verify that the (unauthorized user) success add many product to cart",
+              "timedOut": null,
+              "duration": 7329,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "menuHeader.precondUnauthorizedUser();\nmenuHeader.precondCounterCartZero(initialCart);\nhomePage.addProducttoCart(numberofitemcase2);\nhomePage.expectedShowAlertSuccessAddtoCart();\nhomePage.expectedCounterIncreasetoMax(numberofitemcase2);",
+              "err": {},
+              "uuid": "8f8ca866-9831-40d8-909a-647ed1ef7a73",
+              "parentUUID": "5cf92952-ff1e-41c2-8f70-056d65aaacd1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "efca5bb0-41dc-4ea4-84de-bf30db3bc4ec",
+            "8f8ca866-9831-40d8-909a-647ed1ef7a73"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15227,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
